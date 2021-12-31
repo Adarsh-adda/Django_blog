@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-z%a1+y2gtwnok*5r4&5u(q#o^^*nb)5e7-eqngy(^o9pr-jje+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'herokudjangoblogapp.herokuapp.com'
+]
 
 
 # Application definition
@@ -138,8 +140,8 @@ LOGIN_URL = 'login'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'adarshku123654@gmail.com'
-EMAIL_HOST_PASSWORD = 'meikmnykhhwmojxn'
+EMAIL_HOST_USER = 'MYEMAIL'
+EMAIL_HOST_PASSWORD = 'MYPASS'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'Blog Team <noreply@blog.com>'
