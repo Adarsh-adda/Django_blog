@@ -1,0 +1,35 @@
+{% extends 'blog/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <form method="POST">
+                {% csrf_token %}
+                {{form|crispy}}
+                <div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-md-4 float-end">
+            <!-- Sidebar Widgets Column -->
+            <div class="card my-4 ">
+                <h5 class="card-header">About Django 3.2</h5>
+                <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, tenetur
+                        dicta
+                        illo
+                        voluptates earum voluptatum perspiciatis totam, alias neque unde veniam vel recusandae sed?
+                    </p>
+                    <a href="https://docs.djangoproject.com/en/3.2/" class="btn btn-danger">Know
+                        more!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

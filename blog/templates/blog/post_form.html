@@ -1,0 +1,24 @@
+{% extends 'blog/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <form method="POST">
+                {% csrf_token %}
+                <fieldset class="form-group">
+                    <legend class="border-bottom mb-3">Blog Post</legend>
+                    {{ form|crispy }}
+                </fieldset>
+                <div>
+                    <button type="submit" class="btn btn-primary mt-2">Post</button>
+                </div>
+            </form>
+        </div>
+        <!-- Sidebar Widgets Column -->
+        {% block sidebar %} {% include 'blog/sidebar.html' %} {% endblock sidebar %}
+    </div>
+</div>
+
+{% endblock content %}

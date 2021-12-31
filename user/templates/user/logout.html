@@ -1,0 +1,11 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+
+<h2 class="ms-5">You have been logout</h2>
+<div class="border-top ms-5 pt-3">
+    <small class="text-muted">
+        <a href="{% url 'login' %}" class="btn btn-outline-info">Log In Again</a>
+    </small>
+</div>
+
+{% endblock content %}
