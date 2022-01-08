@@ -12,3 +12,9 @@ After login user(adarsh)
 # Heroku link
 
 https://herokudjangoblogapp.herokuapp.com/
+
+login credentials for testing
+
+username = testuser
+
+password = Testing@123
