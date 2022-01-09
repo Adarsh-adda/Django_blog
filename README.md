@@ -9,6 +9,8 @@ After login user(adarsh)
 
 ![Alt Text](https://github.com/Adarsh-adda/MyGifs/blob/main/2.gif)
 
+## Note
+This code is for production. If you want to use as the development you need to do some changes in setting.py file.
 # Heroku link
 
 https://herokudjangoblogapp.herokuapp.com/
@@ -18,3 +20,4 @@ login credentials for testing
 username = testuser
 
 password = Testing@123
+
