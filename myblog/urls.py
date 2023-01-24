@@ -4,6 +4,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
 from user import views as user_views
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 
 urlpatterns = [
@@ -27,6 +28,7 @@ urlpatterns = [
     path('', include('blog.urls')),
 ]
 
+urlpatterns += staticfiles_urlpatterns()
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,
                           document_root=settings.MEDIA_ROOT)
