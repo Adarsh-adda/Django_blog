@@ -1,4 +1,5 @@
 # Django_blog
+
 A rich-featured blog application made on django.
 
 ---------Overview of features----------
@@ -10,14 +11,9 @@ After login user(adarsh)
 ![Alt Text](https://github.com/Adarsh-adda/MyGifs/blob/main/2.gif)
 
 ## Note
+
 This code is for production. If you want to use as the development you need to do some changes in setting.py file.
-# Heroku link
 
-https://herokudjangoblogapp.herokuapp.com/
+# Render link
 
-login credentials for testing
-
-username = testuser
-
-password = Testing@123
-
+https://django-blog-hosted.onrender.com
