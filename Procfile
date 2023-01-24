@@ -1,1 +1,2 @@
-web: gunicorn myblog.wsgi
+# Modify this Procfile to fit your needs
+web: gunicorn server:app
