@@ -14,6 +14,6 @@ After login user(adarsh)
 
 This code is for production. If you want to use as the development you need to do some changes in setting.py file.
 
-# Render link
+# Railway link
 
-https://django-blog-hosted.onrender.com
+https://djangoblog-production-ce75.up.railway.app/
